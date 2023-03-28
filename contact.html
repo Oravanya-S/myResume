@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Poppins:wght@400;500&family=Sarabun:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href = "./style1.css">
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="education.html">Education</a> 
+        <a href="work.html">Work Experience</a>  
+        <a href="contact.html">Contact Me</a> 
+    </nav>
+    <hr>
+    <h2 class="topic">Contact Me</h2>
+    <fieldset style="border-radius: 5px; width: 30%; padding: 30px;">
+        <p>Enter your info</p>
+
+        <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+            <div>
+                <label for="yname">Your name</label><br>
+                <input style="width: 250px;" type="text" id="yname" name="yname">
+            </div>
+            <br>
+            <div>
+                <label for="yemail">Your E-mail</label><br>
+                <input style="width: 250px;" type="text" id="yemail" name="yemail">
+            </div>
+            <br>
+            <div>
+                <label for="gender">Gender</label><br>
+                <select style="width: 250px;" id="gender" name="gender">
+                <option value="">select..</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Unidentified">Unidentified</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="textarea">Message</label><br>
+                <textarea style="width: 250px; height: 100px;" name="textarea" placeholder=""></textarea><br><br>
+            </div>
+            <br>
+        <input type="submit" value="Send">&nbsp;<input type="submit" value="Clear">
+    </form> 
+    </fieldset>
+</body>
+</html>
